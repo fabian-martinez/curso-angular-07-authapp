@@ -1,0 +1,11 @@
+<p>protected works!</p>
+
+<pre *ngIf="auth.user$ | async as user">
+    <code>{{ user | json }}</code>
+</pre>
+
+<div *ngIf="metadata">
+    <pre>{{ metadata | json }}</pre>
+  </div>
+
+<button type="button" class="btn btn-primary" (click)="callApi()">Primary</button>
